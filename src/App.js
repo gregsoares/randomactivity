@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import PageLink from './Components/PageLink/PageLink'
 import Topnav from './Components/Topnav/Topnav'
 import Index from './Pages/Index/Index'
+import Todo from './Pages/Todo/Todo'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className='w-full h-screen mx-auto bg-slate-400 pt-4 px-4'>
         <Routes>
           <Route path='/' element={<Index />} />
+          <Route path='/todo' element={<Todo />} />
           <Route
             path='*'
             element={
