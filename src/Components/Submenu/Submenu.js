@@ -9,16 +9,21 @@ const Submenu = () => {
           <div className='flex'>
             <div>
               <lavel>Name</lavel>
-              <input type='text' />
+              <input className='rounded-md p-1 m-2' type='text' />
             </div>
             <div>
               <lavel>Description</lavel>
-              <input type='text' />
+              <input className='rounded-md p-1 m-2' type='text' />
             </div>
           </div>
         </div>
-        <div id='controls'>
-          <PageLink text='Add' /> <PageLink to='/' text='Cancel' />
+        <div className='w-full ' id='controls'>
+          <button className='m-2 p-2 bg-teal-600 text-white rounded-md hover:bg-teal-700'>
+            Add
+          </button>
+          <button className='m-2 p-2 bg-red-500 text-white rounded-md hover:bg-teal-600'>
+            Cancel
+          </button>
         </div>
         <div className='first'>Display Results</div>{' '}
       </div>{' '}
