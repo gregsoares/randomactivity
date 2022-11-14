@@ -1,5 +1,4 @@
 import React from 'react'
-import PageLink from '../PageLink/PageLink'
 
 const Submenu = () => {
   return (
@@ -21,7 +20,7 @@ const Submenu = () => {
           <button className='m-2 p-2 bg-teal-600 text-white rounded-md hover:bg-teal-700'>
             Add
           </button>
-          <button className='m-2 p-2 bg-red-500 text-white rounded-md hover:bg-teal-600'>
+          <button className='m-2 p-2 bg-red-500 text-white rounded-md hover:bg-red-700'>
             Cancel
           </button>
         </div>
