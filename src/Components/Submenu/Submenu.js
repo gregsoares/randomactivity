@@ -7,11 +7,11 @@ const Submenu = () => {
         <div className='inputs'>
           <div className='flex'>
             <div>
-              <lavel>Name</lavel>
+              <label>Name</label>
               <input className='rounded-md p-1 m-2' type='text' />
             </div>
             <div>
-              <lavel>Description</lavel>
+              <label>Description</label>
               <input className='rounded-md p-1 m-2' type='text' />
             </div>
           </div>

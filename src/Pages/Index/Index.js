@@ -7,7 +7,6 @@ const Index = () => {
   const handleAdd25 = () => {
     setList([...list, ...randomCardData.slice(0, 25)])
   }
-  console.log('randomCardData', randomCardData)
   return (
     <div className='w-full min-h-full mx-auto bg-slate-400'>
       <div>
