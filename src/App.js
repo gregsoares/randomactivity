@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Topnav />
-      <div className='w-full h-screen mx-auto bg-slate-400 pt-4 px-4'>
+      <div className='w-full min-h-screen mx-auto bg-slate-400 pt-4 px-4'>
         <Routes>
           <Route path='/' element={<Index />} />
           <Route path='/todo' element={<Todo />} />

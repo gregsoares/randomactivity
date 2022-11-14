@@ -24,9 +24,11 @@ const Index = () => {
           </button>
         </span>
       </div>
-      <section id='card-deck' className='grid grid-cols-2 md:grid-cols-4 '>
+      <section id='card-deck' className='grid grid-cols-12'>
         {list.map(card => (
-          <Card title={card.title} text={card.text} />
+          <span className='col-span-4 sm:col-span-3 md:col-span-2 col-start-2 col-end-12 sm:col-start-1 sm:col-end-12'>
+            <Card title={card.title} text={card.text} />
+          </span>
         ))}
       </section>
     </div>
