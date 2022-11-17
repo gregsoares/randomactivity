@@ -27,7 +27,7 @@ const Test = () => {
       console.log('handleActivity::res :>> ', res)
       setActivityList([...activityList, res])
     })
-  }, [])
+  })
 
   useEffect(() => {
     console.log('useEffect::activityList: ', activityList)

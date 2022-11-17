@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import PageLink from './Components/PageLink/PageLink'
 import Topnav from './Components/Topnav/Topnav'
@@ -6,6 +6,8 @@ import Index from './Pages/Index/Index'
 import Todo from './Pages/Todo/Todo'
 import Test from './Pages/Test/Test'
 import randomData from './Store/randomData'
+
+export const ListContext = React.createContext()
 
 function App() {
   const [activityList, setActivityList] = useState(randomData)
@@ -18,7 +20,11 @@ function App() {
           <Route
             exact
             path='/todo'
-            element={<Todo data={activityList || []} />}
+            element={
+              <ListContext.Provider value={{ activityList, setActivityList }}>
+                <Todo />
+              </ListContext.Provider>
+            }
           />
           <Route exact path='/test' element={<Test />} />
           <Route
