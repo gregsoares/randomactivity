@@ -6,6 +6,7 @@ import Index from './Pages/Index/Index'
 import Todo from './Pages/Todo/Todo'
 import Test from './Pages/Test/Test'
 import randomData from './Store/randomData'
+import { ContextProvider } from './Store/context'
 
 export const ListContext = React.createContext()
 
@@ -16,7 +17,15 @@ function App() {
       <Topnav currentPage={useLocation().pathname} />
       <div className='w-full min-h-screen mx-auto bg-slate-400 pt-4 px-4'>
         <Routes>
-          <Route exact path='/' element={<Index />} />
+          <Route
+            exact
+            path='/'
+            element={
+              <ContextProvider>
+                <Index />
+              </ContextProvider>
+            }
+          />
           <Route
             exact
             path='/todo'

@@ -10,7 +10,7 @@ const Card = ({ cardData }) => {
     return price
   }
   return (
-    <div className='text-sm flex flex-col m-1 p-2 bg-slate-300 shadow-md rounded-md'>
+    <div className='text-sm flex flex-wrap flex-col m-1 p-2 bg-slate-300 shadow-md rounded-md'>
       <div className='text-center text-xl p-2'>{activity}</div>
 
       <span className='flex justify-evenly'>
