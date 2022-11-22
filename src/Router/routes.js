@@ -1,17 +1,13 @@
 // import pages
-import Home from '../pages/Home'
-import About from '../pages/About'
-import Contact from '../pages/Contact'
+import Index from '../Pages/Index/Index'
 
 // define routes
-const routes = [
+const routes = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: Index,
     exact: true,
   },
-  { path: '/about', element: <About /> },
-  { path: '/contact', element: <Contact /> },
-]
+])
 
 export default routes
