@@ -1,3 +1,4 @@
+import { createBrowserRouter } from 'react-router-dom'
 // import pages
 import Index from '../Pages/Index/Index'
 

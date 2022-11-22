@@ -1,0 +1,1 @@
+for x in src/Pages/**/*.js; do mv "$x" "${x%.js}.jsx"; done
